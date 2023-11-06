@@ -23,16 +23,14 @@ function draw() {
   } else {
     background(230, 230, 250);
 for (var i = 0; i < drops.length; i++)
-
 drops[i].fall();
 drops[i].show();
-
   }
 }    
 function keyPressed(){
   if(key === 'p'){
   paused = true; 
     } else {
-      
+
     }
   }
