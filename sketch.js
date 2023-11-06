@@ -18,18 +18,20 @@ function setup() {
 }
 
 function draw() {
-  background(230, 230, 250);
-  for (var i = 0; i < drops.length; i++) {
-      if(paused){
-        paused = true;
-      } else {
-        drops[i].fall();
-        drops[i].show();
+  if(paused){
+    
+  } else {
+    background(230, 230, 250);
+for (var i = 0; i < drops.length; i++)
+
+drops[i].fall();
+drops[i].show();
+
   }
 }
-}
+     
 function keyPressed(){
   if(key === 'p'){
-  
-  }
+  paused = true; 
+    }
   }
