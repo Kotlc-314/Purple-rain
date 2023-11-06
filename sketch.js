@@ -21,9 +21,10 @@ function draw() {
   if (paused) {
   } else {
     background(230, 230, 250);
-    for (var i = 0; i < drops.length; i++)
-    drops[i].fall();
-    drops[i].show();
+    for (var i = 0; i < drops.length; i++) {
+      drops[i].fall();
+      drops[i].show();
+    }
   }
 }
 
