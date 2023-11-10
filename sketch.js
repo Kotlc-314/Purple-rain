@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
   if (paused) {
-   push();
+   push()
     //draw paused stuff
     textSize(100);
    textAlign(CENTER, CENTER);
