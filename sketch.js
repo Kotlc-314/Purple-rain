@@ -19,6 +19,12 @@ function setup() {
 
 function draw() {
   if (paused) {
+   push();
+    //draw paused stuff
+    textSize(100);
+   textAlign(CENTER, CENTER);
+    text('PAUSED', 50, 50);
+    pop();
   } else {
     background(230, 230, 250);
     for (var i = 0; i < drops.length; i++) {
@@ -31,5 +37,7 @@ function draw() {
 function keyPressed(){
   if(key === 'p'){
     paused = true; 
-  } 
+  } else {
+    paused = false;
+  }
 }
