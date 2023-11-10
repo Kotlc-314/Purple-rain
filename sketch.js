@@ -24,7 +24,7 @@ function draw() {
     textSize(100);
    textAlign(CENTER, CENTER);
     text('PAUSED', 50, 50);
-    pop();
+    pop()
   } else {
     background(230, 230, 250);
     for (var i = 0; i < drops.length; i++) {
