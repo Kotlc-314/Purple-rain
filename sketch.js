@@ -36,5 +36,10 @@ function draw() {
 
 function keyPressed() {
   if (key === 'p') {
-    paused = !paused;
+    if (paused) {
+      paused = true;
+    } else {
+    paused = false;
+    }
   }
+}
