@@ -22,7 +22,7 @@ function draw() {
    push()
     //draw paused stuff
     textSize(100);
-   textAlign(TOP, CENTER);
+   textAlign(CENTER, CENTER);
     text('PAUSED', 50, 50);
     pop()
   } else {
