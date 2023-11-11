@@ -23,7 +23,7 @@ function draw() {
     //draw paused stuff
     textSize(100);
    textAlign(CENTER, CENTER);
-    text('PAUSED', 50, 50);
+    text('PAUSED', 300, 200);
     pop()
   } else {
     background(230, 230, 250);
