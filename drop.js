@@ -13,7 +13,7 @@ function Drop() {
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
-    var grav = map(this.z, 0, 20, 0, 0.2);
+    var grav = map(this.z, 0, 20, 0, 0.1);
     this.yspeed = this.yspeed + grav;
 
     if (this.y > height) {
