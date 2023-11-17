@@ -6,7 +6,7 @@
 // Purple Rain
 // (138, 43, 226)
 // (230, 230, 250) // background
-// (255, 245, 238) //New background
+// (54, 69, 79) //New background
 
 var drops = [];
 var paused = false;
@@ -27,7 +27,7 @@ function draw() {
     text('PAUSED', 300, 200);
     pop()
   } else {
-    background(255, 245, 238);
+    background(54, 69, 79);
     for (var i = 0; i < drops.length; i++) {
       drops[i].fall();
       drops[i].show();
