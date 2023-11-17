@@ -10,6 +10,7 @@ function Drop() {
   this.z = random(0, 20);
   this.len = map(this.z, 0, 20, 10, 20);
   this.yspeed = map(this.z, 0, 20, 1, 20);
+  this.color = [random(240), random(244), random(244)];
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
@@ -25,7 +26,7 @@ function Drop() {
   this.show = function() {
     var thick = map(this.z, 0, 20, 2, 5);
     strokeWeight(thick);
-    stroke(138, 43, 226);
+    stroke(this.color);
     line(this.x, this.y, this.x, this.y + this.len);
   }
 }
