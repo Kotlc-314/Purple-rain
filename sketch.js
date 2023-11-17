@@ -6,6 +6,7 @@
 // Purple Rain
 // (138, 43, 226)
 // (230, 230, 250) // background
+// (255, 245, 238) //New background
 
 var drops = [];
 var paused = false;
