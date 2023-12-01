@@ -33,6 +33,7 @@ function draw() {
     pop()
   } else {
     background(54, 69, 79);
+    image (cloud, mouseX, 5, 150, 150);
     for (var i = 0; i < drops.length; i++) {
       drops[i].fall();
       drops[i].show();
