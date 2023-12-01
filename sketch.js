@@ -10,10 +10,10 @@
 
 var drops = [];
 var paused = false;
-var cloud = loadImage = ('https://www.icloud.com/sharedalbum/#B0iJtdOXm8pfLOa');
+var cloud = [];
 
 function preload() {
-
+cloud = loadImage = ('https://www.icloud.com/sharedalbum/#B0iJtdOXm8pfLOa');
 }
 
 function setup() {
