@@ -13,7 +13,7 @@ var paused = false;
 var cloud = [];
 
 function preload() {
-cloud = loadImage = ('https://www.icloud.com/sharedalbum/#B0iJtdOXm8pfLOa');
+cloud = loadImage = ('Cloud.png');
 }
 
 function setup() {
