@@ -10,6 +10,11 @@
 
 var drops = [];
 var paused = false;
+var cloud = loadImage = ('https://www.icloud.com/sharedalbum/#B0iJtdOXm8pfLOa');
+
+function preload() {
+
+}
 
 function setup() {
   createCanvas(640, 360);
