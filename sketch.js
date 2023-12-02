@@ -13,7 +13,7 @@ var paused = false;
 var cloud;
 
 function preload() {
-cloud = loadImage = ('Cloud.png');
+cloud = loadImage ('Cloud.png');
 }
 
 function setup() {
