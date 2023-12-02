@@ -10,7 +10,7 @@
 
 var drops = [];
 var paused = false;
-var cloud = [];
+var cloud;
 
 function preload() {
 cloud = loadImage = ('Cloud.png');
