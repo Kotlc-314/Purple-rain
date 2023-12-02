@@ -5,7 +5,7 @@
 
 
 function Drop() {
-  this.x = random(width);
+  this.x = mouseX;
   this.y = random(-500, -50);
   this.z = random(0, 20);
   this.len = map(this.z, 0, 20, 10, 20);
