@@ -48,9 +48,6 @@ function draw() {
     let x0 = width/2, y0 = height/2; 
     let r1 = 180, r2 = 100; 
 
-    // Note that `ellipse` takes in 
-  // diameters not radii! 
-  ellipse(x0, y0, 2*r1, 2*r2); 
   drawBBox(x0, y0, r1, r2); 
   
   // We don't want to draw this 
