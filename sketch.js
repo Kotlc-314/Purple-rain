@@ -37,6 +37,7 @@ function draw() {
     for (var i = 0; i < drops.length; i++) {
       drops[i].fall();
       drops[i].show();
+      drops[i].mouseX();
     }
     image (cloud, mouseX, 0, 150, 150);
   }
