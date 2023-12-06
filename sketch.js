@@ -23,6 +23,17 @@ function setup() {
   }
 }
 
+function drawBBox(x0, y0, r1, r2){ 
+
+  // Draw only the outline 
+  // of the rectangle 
+  noFill(); 
+  
+  // Draw the outline in red 
+  stroke(255, 0, 0); 
+  rect(x0-r1, y0-r2, 2*r1, 2*r2); 
+} 
+
 function draw() {
   if (paused) {
    push()
@@ -33,6 +44,19 @@ function draw() {
     pop()
   } else {
     background(54, 69, 79);
+    
+    let x0 = width/2, y0 = height/2; 
+    let r1 = 180, r2 = 100; 
+
+    // Note that `ellipse` takes in 
+  // diameters not radii! 
+  ellipse(x0, y0, 2*r1, 2*r2); 
+  drawBBox(x0, y0, r1, r2); 
+  
+  // We don't want to draw this 
+  // over and over again 
+  noLoop(); 
+  
     //image (cloud, mouseX, 5, 150, 150);
     for (var i = 0; i < drops.length; i++) {
       drops[i].fall();
