@@ -38,7 +38,7 @@ function draw() {
       drops[i].fall();
       drops[i].show();
       drops[i].mouseX
-
+    }
     image (cloud, mouseX, 0, 150, 150);
   }
 }
