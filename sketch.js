@@ -23,6 +23,7 @@ function setup() {
   }
 }
 
+//this function draws the bounding box with the same outline color as the background so that it blends in
 function drawBBox(x1, y1, x2, y2) { 
   stroke(54, 69, 79);
   noFill(); 
@@ -34,20 +35,20 @@ function drawBBox(x1, y1, x2, y2) {
 } 
 
 function draw() {
-  if (paused) {
+  if (paused) { // if this paused is true it will stop the animation and display paused to the screen
    push()
     //draw paused stuff
     textSize(100);
    textAlign(CENTER, CENTER);
     text('PAUSED', 300, 200);
     pop()
-  } else {
+  } else { // if it isn't paused then it will continue to draw everything as it normally would
     background(54, 69, 79);
     
-    let x1 = mouseX, y1 = 100, x2 = mouseX + 150, y2 = 360; 
-  
+    let x1 = mouseX, y1 = 100, x2 = mouseX + 150, y2 = 360; // creates bounding box by using mouseX 
     drawBBox(x1, y1, x2, y2); 
 
+   //tells the code what I want x, y, w, and h to be
     let bbox = {
       x: mouseX,
       y: 100,
@@ -55,19 +56,20 @@ function draw() {
       h: 260
     };
       
-drawBBox(bbox.x, bbox.y, bbox.x + bbox.w, bbox.y + bbox.h);
+    drawBBox(bbox.x, bbox.y, bbox.x + bbox.w, bbox.y + bbox.h);
 
-    for (var i = 0; i < drops.length; i++) {
+      for (var i = 0; i < drops.length; i++) {
         drops[i].fall();
         drops[i].show(bbox);
       }
     
-      image (cloud, mouseX, 0, 150, 150);
+    image (cloud, mouseX, 0, 150, 150);
     }
 }
 
+
 function keyPressed() {
   if (key === 'p') {
-    paused = !paused;
+    paused = !paused; //when you press p on the keyboard it toggles paused
   }
 }
