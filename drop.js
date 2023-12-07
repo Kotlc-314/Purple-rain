@@ -23,7 +23,7 @@ function Drop() {
     }
   }
 
-  this.show = function() {
+  this.show = function(bbox) {
     var thick = map(this.z, 0, 20, 2, 5);
     strokeWeight(thick);
     stroke(this.color);
