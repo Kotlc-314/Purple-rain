@@ -23,15 +23,12 @@ function setup() {
   }
 }
 
-function drawBBox(x0, y0, r1, r2){ 
-
-  // Draw only the outline 
-  // of the rectangle 
-  noFill(); 
-  
-  // Draw the outline in red 
+function drawBBox(x1, y1, x2, y2) { 
   stroke(255, 0, 0); 
-  rect(x0-r1, y0-r2, 2*r1, 2*r2); 
+  noFill(); 
+  let x = min(x1, x2), y = min(y1, y2); 
+  let w = max(x1, x2) - x, h = max(y1, y2) - y; 
+  rect(x, y, w, h); 
 } 
 
 function draw() {
