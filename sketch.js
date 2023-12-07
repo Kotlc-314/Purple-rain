@@ -48,7 +48,16 @@ function draw() {
   
     drawBBox(x1, y1, x2, y2); 
 
-      for (var i = 0; i < drops.length; i++) {
+    let bbox = {
+      x: mouseX,
+      y: 100;
+      w:150,
+      h:260
+    };
+      
+drawBBox(bbox.x, bbox.y, bbox.x + bbox.w, bbox.y + bbox.h);
+
+    for (var i = 0; i < drops.length; i++) {
         drops[i].fall();
         drops[i].show();
       }
