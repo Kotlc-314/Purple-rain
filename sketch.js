@@ -13,7 +13,7 @@ var paused = false;
 var cloud;
 
 function preload() {
-cloud = loadImage ('Cloud.png');
+  cloud = loadImage ('Cloud.png');
 }
 
 function setup() {
@@ -26,8 +26,10 @@ function setup() {
 function drawBBox(x1, y1, x2, y2) { 
   stroke(255, 0, 0); 
   noFill(); 
+  
   let x = min(x1, x2), y = min(y1, y2); 
   let w = max(x1, x2) - x, h = max(y1, y2) - y; 
+  
   rect(x, y, w, h); 
 } 
 
@@ -45,18 +47,14 @@ function draw() {
     let x1 = mouseX, y1 = 100, x2 = mouseX + 150, y2 = 360; 
   
     drawBBox(x1, y1, x2, y2); 
-  
-  // We don't want to draw this 
-  // over and over again 
-  //noLoop(); 
-  
-    //image (cloud, mouseX, 5, 150, 150);
-    for (var i = 0; i < drops.length; i++) {
-      drops[i].fall();
-      drops[i].show();
+
+      for (var i = 0; i < drops.length; i++) {
+        drops[i].fall();
+        drops[i].show();
+      }
+    
+      image (cloud, mouseX, 0, 150, 150);
     }
-    image (cloud, mouseX, 0, 150, 150);
-  }
 }
 
 function keyPressed() {
