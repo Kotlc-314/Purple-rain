@@ -52,7 +52,7 @@ function draw() {
   
   // We don't want to draw this 
   // over and over again 
-  noLoop(); 
+  //noLoop(); 
   
     //image (cloud, mouseX, 5, 150, 150);
     for (var i = 0; i < drops.length; i++) {
