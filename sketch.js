@@ -42,10 +42,9 @@ function draw() {
   } else {
     background(54, 69, 79);
     
-    let x0 = width/2, y0 = height/2; 
-    let r1 = 180, r2 = 100; 
-
-  drawBBox(x0, y0, r1, r2); 
+    let x1 = mouseX, y1 = 100, x2 = mouseX + 150, y2 = 360; 
+  
+    drawBBox(x1, y1, x2, y2); 
   
   // We don't want to draw this 
   // over and over again 
