@@ -59,7 +59,7 @@ drawBBox(bbox.x, bbox.y, bbox.x + bbox.w, bbox.y + bbox.h);
 
     for (var i = 0; i < drops.length; i++) {
         drops[i].fall();
-        drops[i].show();
+        drops[i].show(bbox);
       }
     
       image (cloud, mouseX, 0, 150, 150);
