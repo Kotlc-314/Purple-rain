@@ -27,6 +27,8 @@ function Drop() {
     var thick = map(this.z, 0, 20, 2, 5);
     strokeWeight(thick);
     stroke(this.color);
-    line(this.x, this.y, this.x, this.y + this.len);
+    if (this.x > bbox.x && this.x < bbox.x + bbox.w && this.y > bbox.y && this.y < bbox.y + bbox.h) {
+      line(this.x, this.y, this.x, this.y + this.len);  
+    }
   }
 }
