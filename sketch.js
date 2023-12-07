@@ -50,7 +50,7 @@ function draw() {
 
     let bbox = {
       x: mouseX,
-      y: 100;
+      y: 100,
       w:150,
       h:260
     };
