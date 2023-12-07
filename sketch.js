@@ -24,7 +24,7 @@ function setup() {
 }
 
 function drawBBox(x1, y1, x2, y2) { 
-  stroke(255, 0, 0); 
+  stroke(54, 69, 79);
   noFill(); 
   
   let x = min(x1, x2), y = min(y1, y2); 
