@@ -28,7 +28,6 @@ function drawBBox(x1, y1, x2, y2) {
   stroke(54, 69, 79);
   noFill(); 
   
-  //this defines what I want x,y,w,and h
   let x = min(x1, x2), y = min(y1, y2); 
   let w = max(x1, x2) - x, h = max(y1, y2) - y; 
   
